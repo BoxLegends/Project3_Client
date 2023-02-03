@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Home() {
     return (
-      <div style={{textAlign: `center`}} className='home'>
+      <div style={{textAlign: `center`, objectPosition: `center`}} className='home'>
            <div>
       <h1 style={{marginTop: `10px`, marginBottom: `10px`}}>Welcome to Our Dev Team!</h1>
       <img src="Client\public\officebuildingstock.jpg"/>
