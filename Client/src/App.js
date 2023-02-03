@@ -9,7 +9,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 const client = new ApolloClient({
-  uri: 'https://dashboard.heroku.com/apps/devslist',
+  uri: 'https://devslist.herokuapp.com/graphql',
   cache: new InMemoryCache(),
 });
 
