@@ -10,7 +10,7 @@ export const QUERY_ME = gql`
   }
 `;
 
-export const QUERY_SINGLE_USER = gql`
+export const QUERY_USER = gql`
 query User($userId: ID!) {
   user(userId: $userId) {
     _id

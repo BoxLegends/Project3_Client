@@ -13,6 +13,14 @@
         color: white;
       }
 
+      .team h2  {
+        margin: 0;
+        padding-top: 40px;
+        text-align: center;
+        font-size: 3rem;
+        color: black;
+      } 
+
       .team header {
         background-color: #676767;
         height: 160px;

@@ -30,11 +30,18 @@ const Team = () => {
   return (
     <>
     <div className='team'>
+      <div>
       <header>
-      <h1>Viewing {team.title}!</h1>
+      <h1>Viewing {team.name}!</h1>
+      <p>{team.description}</p>
       </header>
     </div>
       <Container>
+      <h2>
+          {team.teamMembers?.length
+            ? `Team Members:`
+            : 'No Members Yet'}
+        </h2>
         <CardColumns>
           {team.users?.map((user) => {
             return (
@@ -55,6 +62,7 @@ const Team = () => {
           })}
         </CardColumns>
       </Container>
+      </div>
     </>
   );
   };

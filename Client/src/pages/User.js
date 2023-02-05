@@ -5,13 +5,13 @@ import './styles/User.css';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-import { QUERY_SINGLE_USER } from '../utils/queries';
+import { QUERY_USER } from '../utils/queries';
 
 const User = () => {
   // Use `useParams()` to retrieve value of the route parameter `:profileId`
   const { userId } = useParams();
 
-  const { loading, data } = useQuery(QUERY_SINGLE_USER, {
+  const { loading, data } = useQuery(QUERY_USER, {
     // pass URL parameter
     variables: { userId: userId },
   });
@@ -24,15 +24,18 @@ const User = () => {
   return (
       <div className="user">
         <h3 className="card-header text-light p-2 m-0">
-          {user.name} gjguig<br />
+          {user.name} <br />
           <span style={{ fontSize: '1rem' }}>
-            {user.title}fjhgkjerthg
+            {user.title}
           </span>
         </h3>
         <div className=" py-4 info ">
+          <p><a href={user.project1} target="_blank" rel="noreferrer">Group Project 1</a><br></br>
+          <a href={user.project2} target="_blank" rel="noreferrer">Group Project 2</a>
+          </p>
           <blockquote
             className="p-4"
-          >gkijgiuyghk
+          >
             {user.description}
           </blockquote>
         </div>

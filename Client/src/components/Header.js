@@ -22,9 +22,15 @@ const AppNavbar = () => {
           <Navbar.Collapse id='navbar'>
             <Nav className='ml-auto'>
               {Auth.loggedIn() ? (
+
+
+
                 <>
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                 </>
+
+
+
               ) : (
                 <Nav.Link onClick={() => setShowModal(true)}>Login/Sign Up</Nav.Link>
               )}
@@ -32,6 +38,7 @@ const AppNavbar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
       {/* set modal data up */}
       <Modal
         size='lg'
