@@ -1,6 +1,6 @@
 import React from 'react';
+import './styles/Team.css';
 import {
-  Jumbotron,
   Container,
   CardColumns,
   Card
@@ -29,11 +29,11 @@ const Team = () => {
 
   return (
     <>
-      <Jumbotron fluid className="text-light bg-dark">
-        <Container>
-          <h1>Viewing {team.title}!</h1>
-        </Container>
-      </Jumbotron>
+    <div className='team'>
+      <header>
+      <h1>Viewing {team.title}!</h1>
+      </header>
+    </div>
       <Container>
         <CardColumns>
           {team.users?.map((user) => {
@@ -57,6 +57,7 @@ const Team = () => {
       </Container>
     </>
   );
-};
+  };
+
 
 export default Team;

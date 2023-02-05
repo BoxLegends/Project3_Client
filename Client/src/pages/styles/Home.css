@@ -1,0 +1,36 @@
+.home {
+    object-position: center;
+        background: #c4c4c4;
+        padding: 30px;
+        text-align: center;
+
+      }
+    
+      .home p {
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+    
+      /*.home img {
+        content: url(./images/self.jpg);
+        max-height: 140px;
+        clear: both;
+        margin-bottom: 30px;
+        margin-top: 15px;
+        border-radius: 40%;
+    }*/
+    
+    
+
+    .title {
+        background-color: #676767;
+        height: 160px;
+      }
+      
+      .title h1 {
+        margin: 0;
+        padding-top: 40px;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 3.5rem;
+      }

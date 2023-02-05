@@ -1,0 +1,19 @@
+.team {
+    object-position: center;
+        background: #c4c4c4;
+        padding: 30px;
+        text-align: center;
+      }
+
+      .team h1 {
+        margin: 0;
+        padding-top: 40px;
+        text-align: center;
+        font-size: 3.5rem;
+        color: white;
+      }
+
+      .team header {
+        background-color: #676767;
+        height: 160px;
+      }
