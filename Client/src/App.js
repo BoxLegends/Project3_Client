@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.css';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 

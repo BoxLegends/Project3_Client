@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
+import { Navbar, Nav, Container, Modal, Tab, NavDropdown } from 'react-bootstrap';
 import SignUpForm from './SignupForm';
 import LoginForm from './LoginForm';
 
@@ -18,22 +18,25 @@ const AppNavbar = () => {
           <Navbar.Brand as={Link} to='/'>
             DevList
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls='navbar' />
-          <Navbar.Collapse id='navbar'>
+          <Navbar.Toggle aria-controls="navbar-dark-example" />
+          <Navbar.Collapse id="navbar-dark-example">
             <Nav className='ml-auto'>
               {Auth.loggedIn() ? (
-
-
-
                 <>
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                 </>
-
-
-
               ) : (
                 <Nav.Link onClick={() => setShowModal(true)}>Login/Sign Up</Nav.Link>
               )}
+              <NavDropdown  id="nav-dropdown-dark-example"
+              title="Teams"
+              menuVariant="dark">
+              <NavDropdown.Item href="teams/63dfc78c17bff187c7f2ec8a">Team 1</NavDropdown.Item>
+              <NavDropdown.Item>Team 2</NavDropdown.Item>
+              <NavDropdown.Item>Team 3</NavDropdown.Item>
+              <NavDropdown.Item>Team 4</NavDropdown.Item>
+              <NavDropdown.Item>Team 5</NavDropdown.Item>
+            </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -43,7 +43,7 @@ const Team = () => {
             : 'No Members Yet'}
         </h2>
         <CardColumns>
-          {team.users?.map((user) => {
+          {team.teamMembers?.map((user) => {
             return (
               <Card key={user.userId} border="dark">
                 {user.image ? (
