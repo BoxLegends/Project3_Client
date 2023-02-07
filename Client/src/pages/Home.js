@@ -6,7 +6,7 @@ export default function Home() {
       <div className='home'>
            <div>
            <header className="title">
-      <h1>Welcome to Our Dev Team!</h1>
+      <h1>Welcome to Devs List!</h1>
       </header>
       <p>Discover the members of our talented development team and learn more about their skills and experience!</p>
     </div>
