@@ -40,8 +40,8 @@ const Team = () => {
       <p>{team.description}</p>
       </header>
     </div>
+    <div className='memberCard'>
       <Container>
-
       {team.name === 'Team 1' ? (
         <>
       <h2> Team Members:
@@ -49,9 +49,8 @@ const Team = () => {
         <UserCard />
         </>
         ) : <h2>No Members Yet</h2>}
-
-
       </Container>
+      </div>
       </div>
     </>
   );

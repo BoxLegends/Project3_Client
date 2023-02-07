@@ -16,6 +16,7 @@
     
 
       .info {
+        min-height: 375px;
         background: #c4c4c4;
       }
 
