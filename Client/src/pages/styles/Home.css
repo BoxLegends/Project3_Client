@@ -33,3 +33,6 @@
         color: whitesmoke;
         font-size: 3.5rem;
       }
+    .hero {
+        width: -webkit-fill-available;
+      }
