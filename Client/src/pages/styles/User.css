@@ -11,7 +11,7 @@
         padding-top: 40px;
         text-align: center;
         font-size: 3.5rem;
-        height: 160px;
+
       }
     
 
@@ -28,9 +28,7 @@
 
       img {
         border-radius: 25px;
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-bottom: 5px;
+        margin-top: 20px;
         max-height: 150px; 
         object-fit: cover;
         width: 250px;

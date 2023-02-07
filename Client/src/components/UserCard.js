@@ -5,7 +5,7 @@ import Yorlan from '../images/idk.jpg';
 import Jared from '../images/self.jpg';
 
 
-  const projects = [
+  const members = [
     {url: "users/63e1ada3f632ba6ebf048bf2", name: "Nick", title: "developer", src: Default},
     {url: "users/63e1ada3f632ba6ebf048bf3", name: "Jared", title: "Developer", src: Jared},
     {url: "users/63e1ada3f632ba6ebf048bf4", name: "John", title: "Developer", src:Default},
@@ -18,7 +18,7 @@ function UserCard() {
 
   return (
 <div style={{textAlign: `center`, objectPosition: `center`}}>
-            {projects.map(p => (
+            {members.map(p => (
   <figure id="next-project">
   <a href={p.url}>
       <img src={p.src} alt={p.pageName}/>

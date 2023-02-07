@@ -40,26 +40,17 @@ const Team = () => {
       <p>{team.description}</p>
       </header>
     </div>
-    {console.log(team.members)}
       <Container>
+
+      {team.name === 'Team 1' ? (
+        <>
       <h2> Team Members:
         </h2>
         <UserCard />
-        {/* <CardColumns>
-              <Card border="dark">
-                {user.image ? (
-                  <Card.Img
-                    src={user.image}
-                    alt={`${user.name}`}
-                    variant="top"
-                  />
-                ) : null}
-                <Card.Body>
-                  <Card.Title>{team.name}</Card.Title>
-                  <Card.Text>{team.title}</Card.Text>
-                </Card.Body>
-              </Card>
-        </CardColumns> */}
+        </>
+        ) : <h2>No Members Yet</h2>}
+
+
       </Container>
       </div>
     </>

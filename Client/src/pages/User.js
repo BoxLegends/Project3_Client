@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/User.css';
+import Default from './images/default.png'
 
 // Import the `useParams()` hook
 import { useParams } from 'react-router-dom';
@@ -24,7 +25,8 @@ const User = () => {
   return (
       <div className="user">
         <h3 className="card-header text-light p-2 m-0">
-          {user.name} <br />
+          {user.name}<br></br> 
+          <img src= {Default} alt='default'/><br></br>
           <span style={{ fontSize: '1rem' }}>
             {user.title}
           </span>
