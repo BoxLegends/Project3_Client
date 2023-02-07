@@ -25,3 +25,14 @@
         border: 2px dotted #1a1a1a;
         line-height: 1.5;
       }
+
+      img {
+        border-radius: 25px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        max-height: 150px; 
+        object-fit: cover;
+        width: 250px;
+        height: 100%;
+      }

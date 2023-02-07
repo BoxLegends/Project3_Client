@@ -42,10 +42,7 @@ const Team = () => {
     </div>
     {console.log(team.members)}
       <Container>
-      <h2>
-      {team.teamMembers?.length
-            ? `Team Members:`
-            : 'No Members Yet'}
+      <h2> Team Members:
         </h2>
         <UserCard />
         {/* <CardColumns>

@@ -18,6 +18,7 @@ query User($userId: ID!) {
     name
     image
     description
+    portfolioLink
   }
 }
 `;

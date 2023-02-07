@@ -30,8 +30,7 @@ const User = () => {
           </span>
         </h3>
         <div className=" py-4 info ">
-          <p><a href={user.project1} target="_blank" rel="noreferrer">Group Project 1</a><br></br>
-          <a href={user.project2} target="_blank" rel="noreferrer">Group Project 2</a>
+          <p><a href={user.portfolioLink} target="_blank" rel="noreferrer">View My Portfolio</a>
           </p>
           <blockquote
             className="p-4"
