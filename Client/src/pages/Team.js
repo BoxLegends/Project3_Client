@@ -2,9 +2,13 @@ import React from 'react';
 import './styles/Team.css';
 import {
   Container,
-  CardColumns,
-  Card
+  // CardColumns,
+  // Card
 } from 'react-bootstrap';
+import UserCard from '../components/UserCard';
+
+
+
 
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
@@ -36,16 +40,16 @@ const Team = () => {
       <p>{team.description}</p>
       </header>
     </div>
+    {console.log(team.members)}
       <Container>
       <h2>
-          {team.teamMembers?.length
+      {team.teamMembers?.length
             ? `Team Members:`
             : 'No Members Yet'}
         </h2>
-        <CardColumns>
-          {team.teamMembers?.map((user) => {
-            return (
-              <Card key={user.userId} border="dark">
+        <UserCard />
+        {/* <CardColumns>
+              <Card border="dark">
                 {user.image ? (
                   <Card.Img
                     src={user.image}
@@ -54,13 +58,11 @@ const Team = () => {
                   />
                 ) : null}
                 <Card.Body>
-                  <Card.Title>{user.name}</Card.Title>
-                  <Card.Text>{user.title}</Card.Text>
+                  <Card.Title>{team.name}</Card.Title>
+                  <Card.Text>{team.title}</Card.Text>
                 </Card.Body>
               </Card>
-            );
-          })}
-        </CardColumns>
+        </CardColumns> */}
       </Container>
       </div>
     </>

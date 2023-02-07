@@ -31,11 +31,11 @@ const AppNavbar = () => {
               <NavDropdown  id="nav-dropdown-dark-example"
               title="Teams"
               menuVariant="dark">
-              <NavDropdown.Item href="teams/63dfc78c17bff187c7f2ec8a">Team 1</NavDropdown.Item>
-              <NavDropdown.Item>Team 2</NavDropdown.Item>
-              <NavDropdown.Item>Team 3</NavDropdown.Item>
-              <NavDropdown.Item>Team 4</NavDropdown.Item>
-              <NavDropdown.Item>Team 5</NavDropdown.Item>
+              <NavDropdown.Item href="/63dfc78c17bff187c7f2ec8a">Team 1</NavDropdown.Item>
+              <NavDropdown.Item href="/63e17d9829ae4fb7f71bcf3d">Team 2</NavDropdown.Item>
+              <NavDropdown.Item href="/63e17e4e29ae4fb7f71bcf3e">Team 3</NavDropdown.Item>
+              <NavDropdown.Item href="/63e17e8129ae4fb7f71bcf3f">Team 4</NavDropdown.Item>
+              <NavDropdown.Item href="/63e17ec029ae4fb7f71bcf40">Team 5</NavDropdown.Item>
             </NavDropdown>
             </Nav>
           </Navbar.Collapse>

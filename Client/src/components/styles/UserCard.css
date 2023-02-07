@@ -1,0 +1,11 @@
+img {
+    border-radius: 25px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    max-height: 150px; 
+    object-fit: cover;
+    display: block;
+    width: 250px;
+    height: 100%;
+  }

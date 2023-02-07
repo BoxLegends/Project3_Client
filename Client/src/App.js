@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 
 const client = new ApolloClient({
   uri: 'https://devslist.herokuapp.com/graphql',
+  // uri: '/graphql',
   cache: new InMemoryCache(),
 });
 
@@ -26,11 +27,11 @@ function App() {
                 element={<Home />} 
               />
               <Route 
-                path="/teams/:teamId" 
+                path="/:teamId" 
                 element={<Team />} 
               />
               <Route 
-                path="/users/:userId" 
+                path="users/:userId" 
                 element={<User />} 
               />
             </Routes>

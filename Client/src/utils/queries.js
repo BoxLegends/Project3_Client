@@ -23,16 +23,10 @@ query User($userId: ID!) {
 `;
 
 export const QUERY_TEAM = gql`
-query Team($teamId: ID!) {
+query Teams($teamId: ID!) {
   team(teamId: $teamId) {
     name
     description
-    teamMembers {
-      _id
-      image
-      name
-      title
-    }
   }
 }
 
