@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/Home.css';
+import Partners from './images/partners.jpg'
 
 export default function Home() {
     return (
@@ -21,7 +22,7 @@ export default function Home() {
             <li>join existing team</li>
           </aside>
 
-          <p> <img className = "hero" src ="https://i.ytimg.com/vi/-7vd6wswQyU/maxresdefault.jpg" alt='goku hero'></img> <h1> The Mission</h1><br></br>Here at devs list we believe that collaboration is key and we want to make collaboration easier! our website sort of acts as a roster in order to
+          <p> <img className = "hero" src ={Partners} alt='goku hero'></img> <h1> The Mission</h1><br></br>Here at devs list we believe that collaboration is key and we want to make collaboration easier! our website sort of acts as a roster in order to
         easily find other like minded talented developers to work with! Sign up today and start collaborating more effectively, and add a profile so
         its easier for others to find you!
          </p>
